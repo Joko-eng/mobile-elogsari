@@ -136,36 +136,6 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              color: Colors.white,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(25.0),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // Navigasi ke halaman formproduk.dart
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => ProdukForm(),
-                            ),
-                          );
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green,
-                        ),
-                        child: const Text("Ke Form Produk"),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
         ]),
       ),
     );
